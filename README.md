@@ -3,8 +3,7 @@
 3. `./corenlp.sh ./data`
 4. `python convert.py ./data`
 5. `python segmenter.py ./data`
-6. `python segmenter.py ./data`
-7. `python ./rstparser.py ./data False`
+6. `python ./rstparser.py ./data False`
 
 全部的结果已存入data目录
 
