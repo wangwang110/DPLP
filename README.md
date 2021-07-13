@@ -1,4 +1,4 @@
-1.下载使用corenlp`https://blog.csdn.net/ltochange/article/details/118696192`
+1. 下载使用corenlp`https://blog.csdn.net/ltochange/article/details/118696192`
 2. 待分析的篇章放到data文件夹下面
 3. `./corenlp.sh ./data`
 4. `python convert.py ./data`
