@@ -36,11 +36,11 @@ class Token(object):
         self.word, self.lemma = None, None
         self.pos = None
         self.hidx, self.deplabel = None, None
-        self.partialparse, self.ner =None, None
+        self.partialparse, self.ner = None, None
         self.eduidx, self.boundary = None, None
         self.gidx, self.send = None, None
 
-        
+
 class Doc(object):
     def __init__(self, tokendict):
         """ Doc

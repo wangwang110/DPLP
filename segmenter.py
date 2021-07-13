@@ -3,11 +3,17 @@
 
 import discoseg.buildedu as buildedu
 from sys import argv
+import sys
+
+sys.path.append("/data_local/DPLP-master/")
+sys.path.append("/data_local/DPLP-master/discoseg/")
+
 
 def main(readpath, writepath):
     fmodel = "discoseg/pretrained/model.pickle.gz"
     fvocab = "discoseg/pretrained/vocab.pickle.gz"
     buildedu.main(fmodel, fvocab, readpath, writepath)
+
 
 if __name__ == '__main__':
     if len(argv) == 2:
@@ -19,5 +25,5 @@ if __name__ == '__main__':
         writepath = argv[2]
         main(readpath, writepath)
     else:
-        print "python segmenter.py read_path [write_path]"
-        print "\tread_path - the document folder"
+        print("python segmenter.py read_path [write_path]")
+        print("\tread_path - the document folder")

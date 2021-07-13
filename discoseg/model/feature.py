@@ -6,6 +6,7 @@
 """ Feature extraction for discourse segmentation
 """
 
+
 class FeatureGenerator(object):
     def __init__(self):
         """ Initialization for feature extraction
@@ -23,7 +24,7 @@ class FeatureGenerator(object):
             feat = self._token_feat(tokendict, n)
             featdict[gidx] = feat
         return featdict
-    
+
     def _token_feat(self, tokendict, n):
         """ Features for one token
         """
@@ -43,7 +44,7 @@ class FeatureGenerator(object):
             feat.append(('Head-Direction', None))
         # Previous first word
         try:
-            prevtok = tokendict[n-1]
+            prevtok = tokendict[n - 1]
         except KeyError:
             prevtok = None
         if prevtok is not None:
@@ -52,7 +53,7 @@ class FeatureGenerator(object):
             feat.append(('Prev1-DepLabel', prevtok.deplabel))
         # Previous second word
         try:
-            prev2tok = tokendict[n-2]
+            prev2tok = tokendict[n - 2]
         except KeyError:
             prev2tok = None
         if prev2tok is not None:
@@ -61,22 +62,22 @@ class FeatureGenerator(object):
             feat.append(('Prev2-DepLabel', prev2tok.deplabel))
         # Next first word
         try:
-            nexttok = tokendict[n+1]
+            nexttok = tokendict[n + 1]
         except KeyError:
             nexttok = None
         if nexttok is not None:
-            feat.append(('Next1-Word',nexttok.word))
-            feat.append(('Next1-POS',nexttok.pos))
-            feat.append(('Next1-DepLabel',nexttok.deplabel))
+            feat.append(('Next1-Word', nexttok.word))
+            feat.append(('Next1-POS', nexttok.pos))
+            feat.append(('Next1-DepLabel', nexttok.deplabel))
         # Next second word
         try:
-            next2tok = tokendict[n+2]
+            next2tok = tokendict[n + 2]
         except KeyError:
             next2tok = None
         if next2tok is not None:
-            feat.append(('Next2-Word',next2tok.word))
-            feat.append(('Next2-POS',next2tok.pos))
-            feat.append(('Next2-DepLabel',next2tok.deplabel))
+            feat.append(('Next2-Word', next2tok.word))
+            feat.append(('Next2-POS', next2tok.pos))
+            feat.append(('Next2-DepLabel', next2tok.deplabel))
         # Dependency-tree related features
         # TODO
         return feat

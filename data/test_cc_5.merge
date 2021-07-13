@@ -1,0 +1,130 @@
+0	1	there	there	RB	nsubj	6	b'O'	 (ROOT (S (NP (RB there))	1
+0	2	is	be	VBZ	cop	6	b'O'	 (VP (VBZ is)	1
+0	3	an	a	DT	det	6	b'O'	 (NP (DT an)	1
+0	4	old	old	JJ	amod	6	b'O'	 (JJ old)	1
+0	5	chinese	chinese	JJ	amod	6	b'NATIONALITY'	 (JJ chinese)	1
+0	6	saying	say	VBG	root	0	b'O'	 (NML (S (VP (VBG saying)	1
+0	7	that	that	IN	mark	14	b'O'	 (SBAR (IN that)	2
+0	8	the	the	DT	det	9	b'O'	 (S (NP (NP (DT the)	2
+0	9	moon	moon	NN	nsubj	14	b'O'	 (NN moon))	2
+0	10	in	in	IN	case	12	b'O'	 (PP (IN in)	2
+0	11	the	the	DT	det	12	b'O'	 (NP (DT the)	2
+0	12	hometown	hometown	NN	nmod	9	b'O'	 (NN hometown))))	2
+0	13	is	be	VBZ	cop	14	b'O'	 (VP (VBZ is)	2
+0	14	full	full	JJ	ccomp	6	b'O'	 (ADJP (JJ full))))))))))	2
+0	15	.	.	.	punct	6	b'O'	 (. .)))	2
+
+1	1	everytime	everytime	NN	obl:tmod	12	b'O'	 (ROOT (S (NP-TMP (NN everytime))	3
+1	2	when	when	WRB	advmod	4	b'O'	 (SBAR (WHADVP (WRB when))	4
+1	3	i	i	PRP	nsubj	4	b'O'	 (S (NP (PRP i))	4
+1	4	go	go	VBP	advcl	12	b'O'	 (VP (VBP go)	4
+1	5	back	back	RB	advmod	4	b'O'	 (ADVP (RB back))	4
+1	6	to	to	IN	case	8	b'O'	 (PP (IN to)	5
+1	7	my	my	PRP$	nmod:poss	8	b'O'	 (NP (PRP$ my)	5
+1	8	hometown	hometown	NN	obl	4	b'O'	 (NN hometown))))))	5
+1	9	,	,	,	punct	12	b'O'	 (, ,)	5
+1	10	i	i	PRP	nsubj	12	b'O'	 (NP (PRP i))	5
+1	11	will	will	MD	aux	12	b'O'	 (VP (MD will)	5
+1	12	think	think	VB	root	0	b'O'	 (VP (VB think)	5
+1	13	of	of	IN	case	15	b'O'	 (PP (IN of)	6
+1	14	this	this	DT	det	15	b'O'	 (NP (DT this)	6
+1	15	saying	saying	NN	obl	12	b'O'	 (NN saying)))))	6
+1	16	.	.	.	punct	12	b'O'	 (. .)))	6
+
+2	1	indeed	indeed	RB	advmod	10	b'O'	 (ROOT (S (ADVP (RB indeed))	7
+2	2	,	,	,	punct	10	b'O'	 (, ,)	7
+2	3	the	the	DT	det	4	b'O'	 (NP (NP (DT the)	7
+2	4	moon	moon	NN	nsubj	10	b'O'	 (NN moon))	7
+2	5	in	in	IN	case	7	b'O'	 (PP (IN in)	7
+2	6	my	my	PRP$	nmod:poss	7	b'O'	 (NP (PRP$ my)	7
+2	7	hometown	hometown	NN	nmod	4	b'O'	 (NN hometown))))	7
+2	8	is	be	VBZ	cop	10	b'O'	 (VP (VBZ is)	7
+2	9	much	much	JJ	advmod	10	b'O'	 (ADJP (ADJP (JJ much)	7
+2	10	clear	clear	JJ	root	0	b'O'	 (JJ clear))	7
+2	11	and	and	CC	cc	12	b'O'	 (CC and)	7
+2	12	bigger	bigger	JJR	conj	10	b'O'	 (ADJP (JJR bigger))))	7
+2	13	.	.	.	punct	10	b'O'	 (. .)))	7
+
+3	1	the	the	DT	det	4	b'O'	 (ROOT (S (S (NP (DT the)	8
+3	2	most	most	RBS	advmod	3	b'O'	 (ADJP (RBS most)	8
+3	3	important	important	JJ	amod	4	b'O'	 (JJ important))	8
+3	4	factor	factor	NN	nsubj	5	b'O'	 (NN factor))	8
+3	5	is	be	VBZ	root	0	b'O'	 (VP (VBZ is)	8
+3	6	that	that	IN	mark	11	b'O'	 (SBAR (IN that)	8
+3	7	the	the	DT	det	8	b'O'	 (S (NP (DT the)	8
+3	8	sky	sky	NN	nsubj:pass	11	b'O'	 (NN sky))	8
+3	9	is	be	VBZ	aux:pass	11	b'O'	 (VP (VBZ is)	8
+3	10	not	not	RB	advmod	11	b'O'	 (RB not)	8
+3	11	polluted	pollute	VBN	ccomp	5	b'O'	 (VP (VBN polluted)	8
+3	12	seriously	seriously	RB	advmod	11	b'O'	 (ADVP (RB seriously))))))))	8
+3	13	,	,	,	punct	5	b'O'	 (, ,)	8
+3	14	so	so	CC	cc	17	b'O'	 (CC so)	8
+3	15	i	i	PRP	nsubj	17	b'O'	 (S (NP (PRP i))	8
+3	16	can	can	MD	aux	17	b'O'	 (VP (MD can)	8
+3	17	see	see	VB	conj	5	b'O'	 (VP (VB see)	8
+3	18	the	the	DT	det	20	b'O'	 (NP (DT the)	8
+3	19	blue	blue	JJ	amod	20	b'O'	 (JJ blue)	8
+3	20	sky	sky	NN	obj	17	b'O'	 (NN sky)))))	8
+3	21	.	.	.	punct	5	b'O'	 (. .)))	8
+
+4	1	unlike	unlike	IN	case	4	b'O'	 (ROOT (S (PP (IN unlike)	9
+4	2	in	in	IN	case	4	b'O'	 (PP (IN in)	9
+4	3	the	the	DT	det	4	b'O'	 (NP (DT the)	9
+4	4	cities	city	NNS	obl	9	b'O'	 (NNS cities))))	9
+4	5	,	,	,	punct	9	b'O'	 (, ,)	9
+4	6	the	the	DT	det	7	b'O'	 (S (NP (DT the)	9
+4	7	buildings	building	NNS	nsubj	9	b'O'	 (NNS buildings))	9
+4	8	are	be	VBP	cop	9	b'O'	 (VP (VBP are)	9
+4	9	tall	tall	JJ	root	0	b'O'	 (ADJP (JJ tall))))	9
+4	10	and	and	CC	cc	15	b'O'	 (CC and)	9
+4	11	people	people	NNS	nmod:poss	13	b'O'	 (S (NP (NP (NNS people)	9
+4	12	's	's	POS	case	11	b'O'	 (POS 's))	9
+4	13	visions	vision	NNS	nsubj:pass	15	b'O'	 (NNS visions))	9
+4	14	are	be	VBP	aux:pass	15	b'O'	 (VP (VBP are)	9
+4	15	covered	cover	VBN	conj	9	b'O'	 (VP (VBN covered))))	9
+4	16	.	.	.	punct	9	b'O'	 (. .)))	9
+
+5	1	what	what	WP	nsubj	3	b'O'	 (ROOT (S (SBAR (WHNP (WP what))	10
+5	2	's	be	VBZ	cop	3	b'O'	 (S (VP (VBZ 's)	10
+5	3	more	more	JJR	advcl	10	b'O'	 (ADJP (JJR more)))))	10
+5	4	,	,	,	punct	10	b'O'	 (, ,)	10
+5	5	there	there	EX	expl	10	b'O'	 (NP (EX there))	10
+5	6	are	be	VBP	aux	10	b'O'	 (VP (VBP are)	10
+5	7	so	so	RB	advmod	10	b'O'	 (ADVP (RB so)	10
+5	8	many	many	JJ	amod	9	b'O'	 (NP (JJ many)	10
+5	9	factories	factory	NNS	obl:npmod	7	b'O'	 (NNS factories)))	10
+5	10	setting	set	VBG	root	0	b'O'	 (VP (VBG setting)	10
+5	11	out	out	RP	compound:prt	10	b'O'	 (PRT (RP out))	10
+5	12	the	the	DT	det	13	b'O'	 (NP (NP (DT the)	10
+5	13	gas	gas	NN	nsubj	10	b'O'	 (NN gas))	10
+5	14	that	that	WDT	nsubj	15	b'O'	 (SBAR (WHNP (WDT that))	11
+5	15	pollutes	pollute	VBZ	acl:relcl	13	b'O'	 (S (VP (VBZ pollutes)	11
+5	16	theair	theair	NN	obj	15	b'O'	 (NP (NN theair))))))))	11
+5	17	.	.	.	punct	10	b'O'	 (. .)))	11
+
+6	1	when	when	WRB	advmod	3	b'O'	 (ROOT (S (SBAR (WHADVP (WRB when))	12
+6	2	i	i	PRP	nsubj	3	b'O'	 (S (NP (PRP i))	12
+6	3	stay	stay	VBP	advcl	10	b'O'	 (VP (VBP stay)	12
+6	4	in	in	IN	case	6	b'O'	 (PP (IN in)	12
+6	5	the	the	DT	det	6	b'O'	 (NP (DT the)	12
+6	6	city	city	NN	obl	3	b'O'	 (NN city))))))	12
+6	7	,	,	,	punct	10	b'O'	 (, ,)	12
+6	8	i	i	PRP	nsubj	10	b'O'	 (S (S (NP (PRP i))	12
+6	9	will	will	MD	aux	10	b'O'	 (VP (MD will)	12
+6	10	miss	miss	VB	root	0	b'O'	 (VP (VB miss)	12
+6	11	my	my	PRP$	nmod:poss	12	b'O'	 (NP (PRP$ my)	12
+6	12	hometown	hometown	NN	obj	10	b'O'	 (NN hometown)))))	12
+6	13	,	,	,	punct	10	b'O'	 (, ,)	12
+6	14	not	not	RB	advmod	18	b'O'	 (RB not)	12
+6	15	noly	noly	RB	advmod	18	b'O'	 (S (ADVP (RB noly))	12
+6	16	the	the	DT	det	18	b'O'	 (NP (NP (DT the)	12
+6	17	beautiful	beautiful	JJ	amod	18	b'O'	 (JJ beautiful)	12
+6	18	scenery	scenery	NN	parataxis	10	b'O'	 (NN scenery))	12
+6	19	,	,	,	punct	18	b'O'	 (, ,)	12
+6	20	but	but	CC	cc	24	b'O'	 (CONJP (CC but)	13
+6	21	also	also	RB	advmod	24	b'O'	 (RB also))	13
+6	22	the	the	DT	det	24	b'O'	 (NP (DT the)	13
+6	23	clean	clean	JJ	amod	24	b'O'	 (JJ clean)	13
+6	24	moon	moon	NN	conj	18	b'O'	 (NN moon)))))	13
+6	25	.	.	.	punct	10	b'O'	 (. .)))	13
+

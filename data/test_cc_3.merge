@@ -1,0 +1,76 @@
+0	1	when	when	WRB	advmod	3	b'O'	 (ROOT (S (SBAR (WHADVP (WRB when))	1
+0	2	autumn	autumn	NN	nsubj	3	b'DATE'	 (S (NP (NN autumn))	1
+0	3	comes	come	VBZ	advcl	8	b'O'	 (VP (VBZ comes))))	1
+0	4	,	,	,	punct	8	b'O'	 (, ,)	1
+0	5	our	we	PRP$	nmod:poss	6	b'O'	 (NP (PRP$ our)	2
+0	6	school	school	NN	nsubj	8	b'O'	 (NN school))	2
+0	7	will	will	MD	aux	8	b'O'	 (VP (MD will)	2
+0	8	hold	hold	VB	root	0	b'O'	 (VP (VB hold)	2
+0	9	the	the	DT	det	11	b'O'	 (NP (DT the)	2
+0	10	sports	sport	NNS	compound	11	b'O'	 (NNS sports)	2
+0	11	meeting	meeting	NN	obj	8	b'O'	 (NN meeting))))	2
+0	12	.	.	.	punct	8	b'O'	 (. .)))	2
+
+1	1	i	i	PRP	nsubj	5	b'O'	 (ROOT (S (NP (PRP i))	3
+1	2	will	will	MD	aux	5	b'O'	 (VP (MD will)	3
+1	3	be	be	VB	cop	5	b'O'	 (VP (VB be)	3
+1	4	very	very	RB	advmod	5	b'O'	 (ADJP (RB very)	3
+1	5	excited	excited	JJ	root	0	b'O'	 (JJ excited)	3
+1	6	about	about	IN	case	9	b'O'	 (PP (IN about)	3
+1	7	the	the	DT	det	9	b'O'	 (NP (DT the)	3
+1	8	big	big	JJ	amod	9	b'O'	 (JJ big)	3
+1	9	event	event	NN	obl	5	b'O'	 (NN event))))))	3
+1	10	.	.	.	punct	5	b'O'	 (. .)))	3
+
+2	1	i	i	PRP	nsubj	2	b'O'	 (ROOT (S (S (NP (PRP i))	4
+2	2	like	like	VBP	root	0	b'O'	 (VP (VBP like)	4
+2	3	to	to	TO	mark	4	b'O'	 (S (VP (TO to)	5
+2	4	play	play	VB	xcomp	2	b'O'	 (VP (VB play)	5
+2	5	basketball	basketball	NN	obj	4	b'O'	 (NP (NN basketball)))))))	5
+2	6	,	,	,	punct	2	b'O'	 (, ,)	5
+2	7	so	so	CC	cc	9	b'O'	 (CC so)	5
+2	8	i	i	PRP	nsubj	9	b'O'	 (S (NP (PRP i))	5
+2	9	join	join	VBP	conj	2	b'O'	 (VP (VP (VBP join)	5
+2	10	the	the	DT	det	12	b'O'	 (NP (DT the)	5
+2	11	basketball	basketball	NN	compound	12	b'O'	 (NN basketball)	5
+2	12	team	team	NN	obj	9	b'O'	 (NN team)))	5
+2	13	and	and	CC	cc	14	b'O'	 (CC and)	6
+2	14	fight	fight	VB	conj	9	b'O'	 (VP (VB fight)	6
+2	15	for	for	IN	case	19	b'O'	 (PP (IN for)	6
+2	16	the	the	DT	det	17	b'O'	 (NP (NP (DT the)	6
+2	17	class	class	NN	nmod:poss	19	b'O'	 (NN class)	6
+2	18	's	's	POS	case	17	b'O'	 (POS 's))	6
+2	19	honor	honor	NN	obl	14	b'O'	 (NN honor))))))	6
+2	20	.	.	.	punct	2	b'O'	 (. .)))	6
+
+3	1	all	all	PDT	det:predet	3	b'O'	 (ROOT (S (S (NP (PDT all)	7
+3	2	the	the	DT	det	3	b'O'	 (DT the)	7
+3	3	students	student	NNS	nsubj	4	b'O'	 (NNS students))	7
+3	4	cheer	cheer	VBP	root	0	b'O'	 (VP (VBP cheer)	7
+3	5	for	for	IN	case	7	b'O'	 (PP (IN for)	7
+3	6	their	they	PRP$	nmod:poss	7	b'O'	 (NP (PRP$ their)	7
+3	7	class	class	NN	obl	4	b'O'	 (NN class)))))	7
+3	8	and	and	CC	cc	13	b'O'	 (CC and)	7
+3	9	the	the	DT	det	10	b'O'	 (S (NP (DT the)	7
+3	10	atmosphere	atmosphere	NN	nsubj	13	b'O'	 (NN atmosphere))	7
+3	11	is	be	VBZ	cop	13	b'O'	 (VP (VBZ is)	7
+3	12	so	so	RB	advmod	13	b'O'	 (ADJP (RB so)	7
+3	13	lively	lively	JJ	conj	4	b'O'	 (JJ lively))))	7
+3	14	.	.	.	punct	4	b'O'	 (. .)))	7
+
+4	1	as	as	IN	mark	4	b'O'	 (ROOT (S (SBAR (IN as)	8
+4	2	we	we	PRP	nsubj	4	b'O'	 (S (NP (PRP we))	8
+4	3	are	be	VBP	cop	4	b'O'	 (VP (VBP are)	8
+4	4	young	young	JJ	advcl	7	b'O'	 (ADJP (JJ young)))))	8
+4	5	,	,	,	punct	7	b'O'	 (, ,)	8
+4	6	we	we	PRP	nsubj	7	b'O'	 (NP (PRP we))	8
+4	7	feel	feel	VBP	root	0	b'O'	 (VP (VP (VBP feel)	8
+4	8	the	the	DT	det	10	b'O'	 (NP (DT the)	8
+4	9	great	great	JJ	amod	10	b'O'	 (JJ great)	8
+4	10	energy	energy	NN	obj	7	b'O'	 (NN energy)))	8
+4	11	and	and	CC	cc	12	b'O'	 (CC and)	9
+4	12	enjoy	enjoy	VB	conj	7	b'O'	 (VP (VB enjoy)	9
+4	13	the	the	DT	det	14	b'O'	 (NP (DT the)	9
+4	14	life	life	NN	obj	12	b'O'	 (NN life))))	9
+4	15	.	.	.	punct	7	b'O'	 (. .)))	9
+

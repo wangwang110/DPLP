@@ -1,0 +1,141 @@
+0	1	my	my	PRP$	nmod:poss	2	b'O'	 (ROOT (S (NP (PRP$ my)	1
+0	2	father	father	NN	nsubj	6	b'O'	 (NN father))	1
+0	3	is	be	VBZ	cop	6	b'O'	 (VP (VBZ is)	1
+0	4	a	a	DT	det	6	b'O'	 (NP (NP (DT a)	1
+0	5	typical	typical	JJ	amod	6	b'O'	 (JJ typical)	1
+0	6	man	man	NN	root	0	b'O'	 (NN man))	1
+0	7	,	,	,	punct	6	b'O'	 (, ,)	1
+0	8	who	who	WP	nsubj	12	b'O'	 (SBAR (WHNP (WP who))	2
+0	9	is	be	VBZ	cop	12	b'O'	 (S (VP (VBZ is)	2
+0	10	not	not	RB	advmod	12	b'O'	 (RB not)	2
+0	11	very	very	RB	advmod	12	b'O'	 (ADJP (RB very)	2
+0	12	talkative	talkative	JJ	acl:relcl	6	b'O'	 (JJ talkative)))))))	2
+0	13	.	.	.	punct	6	b'O'	 (. .)))	2
+
+1	1	when	when	WRB	advmod	4	b'O'	 (ROOT (S (SBAR (WHADVP (WRB when))	3
+1	2	other	other	JJ	amod	3	b'O'	 (S (NP (JJ other)	3
+1	3	fathers	father	NNS	nsubj	4	b'O'	 (NNS fathers))	3
+1	4	say	say	VBP	advcl	15	b'O'	 (VP (VBP say)	3
+1	5	how	how	WRB	advmod	6	b'O'	 (SBAR (WHADJP (WRB how)	4
+1	6	much	much	JJ	dep	8	b'O'	 (JJ much))	4
+1	7	they	they	PRP	nsubj	8	b'O'	 (S (NP (PRP they))	4
+1	8	love	love	VBP	ccomp	4	b'O'	 (VP (VBP love)	4
+1	9	their	they	PRP$	nmod:poss	10	b'O'	 (NP (PRP$ their)	4
+1	10	children	child	NNS	obj	8	b'O'	 (NNS children))))))))	4
+1	11	,	,	,	punct	15	b'O'	 (, ,)	4
+1	12	my	my	PRP$	nmod:poss	13	b'O'	 (NP (PRP$ my)	4
+1	13	father	father	NN	nsubj	15	b'O'	 (NN father))	4
+1	14	just	just	RB	advmod	15	b'O'	 (ADVP (RB just))	4
+1	15	keep	keep	VB	root	0	b'O'	 (VP (VB keep)	4
+1	16	quiet	quiet	JJ	xcomp	15	b'O'	 (ADJP (JJ quiet)))	4
+1	17	.	.	.	punct	15	b'O'	 (. .)))	4
+
+2	1	he	he	PRP	nsubj	3	b'O'	 (ROOT (S (NP (PRP he))	5
+2	2	barely	barely	RB	advmod	3	b'O'	 (ADVP (RB barely))	5
+2	3	says	say	VBZ	root	0	b'O'	 (VP (VBZ says)	5
+2	4	sweet	sweet	JJ	amod	5	b'O'	 (NP (JJ sweet)	5
+2	5	words	word	NNS	obj	3	b'O'	 (NNS words))	5
+2	6	to	to	IN	case	7	b'O'	 (PP (IN to)	5
+2	7	me	I	PRP	obl	3	b'O'	 (NP (PRP me))))	5
+2	8	.	.	.	punct	3	b'O'	 (. .)))	5
+
+3	1	but	but	CC	cc	5	b'O'	 (ROOT (S (CC but)	6
+3	2	he	he	PRP	nsubj	5	b'O'	 (NP (PRP he))	6
+3	3	will	will	MD	aux	5	b'O'	 (VP (MD will)	6
+3	4	never	never	RB	advmod	5	b'O'	 (ADVP (RB never))	6
+3	5	miss	miss	VB	root	0	b'O'	 (VP (VB miss)	6
+3	6	every	every	DT	det	8	b'O'	 (NP (NP (DT every)	6
+3	7	important	important	JJ	amod	8	b'O'	 (JJ important)	6
+3	8	moment	moment	NN	obj	5	b'O'	 (NN moment))	6
+3	9	for	for	IN	case	10	b'O'	 (PP (IN for)	6
+3	10	me	I	PRP	nmod	8	b'O'	 (NP (PRP me))))	6
+3	11	,	,	,	punct	5	b'O'	 (, ,)	6
+3	12	like	like	IN	case	14	b'O'	 (PP (IN like)	6
+3	13	the	the	DT	det	14	b'O'	 (NP (NP (DT the)	6
+3	14	performance	performance	NN	obl	5	b'O'	 (NN performance))	6
+3	15	in	in	IN	case	16	b'O'	 (PP (IN in)	6
+3	16	school	school	NN	nmod	14	b'O'	 (NP (NN school)))))))	6
+3	17	.	.	.	punct	5	b'O'	 (. .)))	6
+
+4	1	he	he	PRP	nsubj	4	b'O'	 (ROOT (S (NP (PRP he))	7
+4	2	is	be	VBZ	cop	4	b'O'	 (VP (VP (VBZ is)	7
+4	3	always	always	RB	advmod	4	b'O'	 (ADVP (RB always))	7
+4	4	one	one	CD	root	0	b'NUMBER'	 (NP (NP (CD one))	7
+4	5	of	of	IN	case	7	b'O'	 (PP (IN of)	7
+4	6	the	the	DT	det	7	b'O'	 (NP (DT the)	7
+4	7	audience	audience	NN	nmod	4	b'O'	 (NN audience)))))	7
+4	8	and	and	CC	cc	9	b'O'	 (CC and)	7
+4	9	watch	watch	VB	conj	4	b'O'	 (VP (VB watch)	7
+4	10	my	my	PRP$	nmod:poss	11	b'O'	 (NP (PRP$ my)	7
+4	11	performance	performance	NN	obj	9	b'O'	 (NN performance))))	7
+4	12	.	.	.	punct	4	b'O'	 (. .)))	7
+
+5	1	my	my	PRP$	nmod:poss	2	b'O'	 (ROOT (S (S (NP (PRP$ my)	8
+5	2	father	father	NN	nsubj	3	b'O'	 (NN father))	8
+5	3	tells	tell	VBZ	root	0	b'O'	 (VP (VBZ tells)	8
+5	4	me	I	PRP	obj	3	b'O'	 (S (NP (PRP me))	8
+5	5	to	to	TO	mark	6	b'O'	 (VP (TO to)	9
+5	6	study	study	VB	xcomp	3	b'O'	 (VP (VB study)	9
+5	7	with	with	IN	case	8	b'O'	 (PP (IN with)	9
+5	8	passion	passion	NN	obl	6	b'O'	 (NP (NN passion))))))))	9
+5	9	and	and	CC	cc	11	b'O'	 (CC and)	10
+5	10	he	he	PRP	nsubj	11	b'O'	 (S (NP (PRP he))	10
+5	11	sets	set	VBZ	conj	3	b'O'	 (VP (VBZ sets)	10
+5	12	the	the	DT	det	14	b'O'	 (NP (NP (DT the)	10
+5	13	good	good	JJ	amod	14	b'O'	 (JJ good)	10
+5	14	example	example	NN	obj	11	b'O'	 (NN example))	10
+5	15	for	for	IN	case	16	b'O'	 (PP (IN for)	10
+5	16	me	I	PRP	nmod	14	b'O'	 (NP (PRP me))))	10
+5	17	,	,	,	punct	11	b'O'	 (, ,)	10
+5	18	because	because	IN	mark	20	b'O'	 (SBAR (IN because)	11
+5	19	he	he	PRP	nsubj	20	b'O'	 (S (NP (PRP he))	11
+5	20	loves	love	VBZ	advcl	11	b'O'	 (VP (VBZ loves)	11
+5	21	his	he	PRP$	nmod:poss	22	b'O'	 (NP (PRP$ his)	11
+5	22	work	work	NN	obj	20	b'O'	 (NN work)))))))	11
+5	23	.	.	.	punct	3	b'O'	 (. .)))	11
+
+6	1	sometimes	sometimes	RB	advmod	3	b'O'	 (ROOT (S (S (ADVP (RB sometimes))	12
+6	2	he	he	PRP	nsubj	3	b'O'	 (NP (PRP he))	12
+6	3	shows	show	VBZ	root	0	b'O'	 (VP (VBZ shows)	12
+6	4	me	I	PRP	iobj	3	b'O'	 (NP (PRP me))	12
+6	5	his	he	PRP$	nmod:poss	6	b'O'	 (NP (NP (PRP$ his)	12
+6	6	design	design	NN	obj	3	b'O'	 (NN design))	12
+6	7	of	of	IN	case	8	b'O'	 (PP (IN of)	12
+6	8	work	work	NN	nmod	6	b'O'	 (NP (NN work))))))	12
+6	9	,	,	,	punct	3	b'O'	 (, ,)	12
+6	10	and	and	CC	cc	12	b'O'	 (CC and)	12
+6	11	i	i	PRP	nsubj	12	b'O'	 (S (NP (PRP i))	12
+6	12	admire	admire	VBP	conj	3	b'O'	 (VP (VBP admire)	12
+6	13	him	he	PRP	obj	12	b'O'	 (NP (PRP him))))	12
+6	14	.	.	.	punct	3	b'O'	 (. .)))	12
+
+7	1	i	i	PRP	nsubj	2	b'O'	 (ROOT (S (NP (PRP i))	13
+7	2	know	know	VBP	root	0	b'O'	 (VP (VBP know)	13
+7	3	my	my	PRP$	nmod:poss	4	b'O'	 (SBAR (S (NP (PRP$ my)	13
+7	4	father	father	NN	nsubj	5	b'O'	 (NN father))	13
+7	5	loves	love	VBZ	ccomp	2	b'O'	 (VP (VBZ loves)	13
+7	6	me	I	PRP	obj	5	b'O'	 (NP (PRP me))	13
+7	7	so	so	RB	advmod	8	b'O'	 (ADVP (RB so)	13
+7	8	much	much	RB	advmod	5	b'O'	 (RB much))))))	13
+7	9	.	.	.	punct	2	b'O'	 (. .)))	13
+
+8	1	though	though	IN	mark	5	b'O'	 (ROOT (S (SBAR (IN though)	14
+8	2	he	he	PRP	nsubj	5	b'O'	 (S (NP (PRP he))	14
+8	3	does	do	VBZ	aux	5	b'O'	 (VP (VBZ does)	14
+8	4	n't	not	RB	advmod	5	b'O'	 (RB n't)	14
+8	5	talk	talk	VB	advcl	11	b'O'	 (VP (VB talk)	14
+8	6	much	much	RB	advmod	5	b'O'	 (ADVP (RB much))))))	14
+8	7	,	,	,	punct	11	b'O'	 (, ,)	14
+8	8	he	he	PRP	nsubj	11	b'O'	 (NP (PRP he))	14
+8	9	will	will	MD	aux	11	b'O'	 (VP (MD will)	14
+8	10	be	be	VB	cop	11	b'O'	 (VP (VB be)	14
+8	11	right	right	JJ	root	0	b'O'	 (ADJP (JJ right)	14
+8	12	by	by	IN	case	14	b'O'	 (PP (IN by)	14
+8	13	my	my	PRP$	nmod:poss	14	b'O'	 (NP (PRP$ my)	14
+8	14	side	side	NN	obl	11	b'O'	 (NN side))))	14
+8	15	whenever	whenever	WRB	advmod	17	b'O'	 (SBAR (WHADVP (WRB whenever))	14
+8	16	i	i	PRP	nsubj	17	b'O'	 (S (NP (PRP i))	14
+8	17	need	need	VBP	advcl	11	b'O'	 (VP (VBP need)	14
+8	18	him	he	PRP	obj	17	b'O'	 (NP (PRP him)))))))	14
+8	19	.	.	.	punct	11	b'O'	 (. .)))	14
+

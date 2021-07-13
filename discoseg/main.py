@@ -23,6 +23,7 @@ fmodel = "model/model.pickle.gz"
 testpath = "data/neg/"
 writepath = "data/neg/"
 
+
 def main():
     ## Build vocab
     thresh = 5

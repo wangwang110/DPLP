@@ -1,11 +1,13 @@
-## extractparsing.py
-## Author: Yangfeng Ji
-## Date: 02-10-2015
-## Time-stamp: <yangfeng 09/25/2015 23:43:17>
+# Copyright 2018 CVTE . All Rights Reserved.
+# coding: utf-8
 
-from preprocess.xmlreader import reader, writer, combine
+from __future__ import print_function
+from __future__ import division
+from __future__ import absolute_import
 from os import listdir
 from os.path import join
+from preprocess.xmlreader import reader, writer, combine
+
 
 def extract(fxml):
     sentlist, constlist = reader(fxml)
@@ -15,15 +17,17 @@ def extract(fxml):
 
 
 def main(rpath):
-    files = [join(rpath,fname) for fname in listdir(rpath) if fname.endswith(".xml")]
+    files = [join(rpath, fname) for fname in listdir(rpath) if fname.endswith(".xml")]
+    print(files)
     for fxml in files:
-        print 'Processing file: {}'.format(fxml)
+        print('Processing file: {}'.format(fxml))
         extract(fxml)
 
 
 if __name__ == '__main__':
     import sys
+
     if len(sys.argv) == 2:
         main(rpath=sys.argv[1])
     else:
-        print "python convert.py data_path"
+        print("python convert.py data_path")

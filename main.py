@@ -3,15 +3,20 @@
 ## Date: 02-14-2015
 ## Time-stamp: <yangfeng 09/25/2015 22:03:48>
 
-from code.readdoc import readdoc
-from code.data import Data
-from code.model import ParsingModel
-from code.util import reversedict
-from code.evalparser import evalparser
-from cPickle import load
+from code_dplp.readdoc import readdoc
+from code_dplp.data import Data
+from code_dplp.model import ParsingModel
+from code_dplp.util import reversedict
+from code_dplp.evalparser import evalparser
+# from cPickle import load
+from pickle import load
 import gzip
+import sys
+
+sys.path.append("/data_local/DPLP-master/code_dplp/")
 
 WITHDP = False
+
 
 def createdoc():
     ftrn = "data/sample/trn-doc.pickle.gz"
@@ -42,10 +47,10 @@ def trainmodel():
     flabel = "data/sample/trn.label"
     D = load(gzip.open(fvocab))
     vocab, labelidxmap = D['vocab'], D['labelidxmap']
-    print 'len(vocab) = {}'.format(len(vocab))
+    print('len(vocab) = {}'.format(len(vocab)))
     data = Data()
     trnM, trnL = data.loadmatrix(fdata, flabel)
-    print 'trnM.shape = {}'.format(trnM.shape)
+    print('trnM.shape = {}'.format(trnM.shape))
     idxlabelmap = reversedict(labelidxmap)
     pm = ParsingModel(vocab=vocab, idxlabelmap=idxlabelmap)
     pm.train(trnM, trnL)
@@ -53,17 +58,17 @@ def trainmodel():
 
 
 if __name__ == '__main__':
-    bcvocab=None
+    bcvocab = None
     ## Use brown clsuters
     with gzip.open("resources/bc3200.pickle.gz") as fin:
-        print 'Load Brown clusters for creating features ...'
+        print('Load Brown clusters for creating features ...')
         bcvocab = load(fin)
     ## Create training data
     # createtrndata(path="data/training/", topn=8000, bcvocab=bcvocab)
     ## Train model
     # trainmodel()
     ## Evaluate model on the RST-DT test set
-    evalparser(path="data/test/", report=True, 
+    evalparser(path="data/test/", report=True,
                bcvocab=bcvocab, draw=False,
                withdp=WITHDP,
                fdpvocab="data/resources/word-dict.pickle.gz",

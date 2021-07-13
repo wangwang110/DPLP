@@ -14,6 +14,7 @@ from feature import FeatureGenerator
 from cPickle import dump
 import gzip
 
+
 class VocabGenerator(object):
     def __init__(self, thresh=20, topn=100):
         """ Initialization
@@ -24,7 +25,6 @@ class VocabGenerator(object):
         self.topn = topn
         self.fg = FeatureGenerator()
 
-        
     def build(self, doc):
         """ Extract features for a given doc
 
@@ -36,12 +36,10 @@ class VocabGenerator(object):
             for feat in featlist:
                 self.features[feat] += 1.0
 
-    
     def select(self):
         """ Select top-n features according to frequency
         """
         pass
-
 
     def filter(self):
         """ Filter out low-frequency features with thresh
@@ -68,4 +66,4 @@ class VocabGenerator(object):
         if len(self.vocab) == 0:
             raise ValueError("Empty vocab")
         dump(self.vocab, fout)
-        print "Save vocab into file: {}".format(fvocab)
+        print("Save vocab into file: {}".format(fvocab))

@@ -3,11 +3,12 @@
 ## Date: 05-02-2015
 ## Time-stamp: <yangfeng 09/25/2015 15:18:23>
 
-from datastruct import *
-from util import isnumber
+from discoseg.model.datastruct import *
+from discoseg.model.util import isnumber
 
 """ Read *.merge file
 """
+
 
 class DocReader(object):
     def __init__(self):
@@ -36,15 +37,14 @@ class DocReader(object):
         doc = Doc(tokendict)
         return doc
 
-
     def _sentboundary(self, tokendict):
         """ Assign sentence boundary
         """
         N = len(tokendict)
         for n in range(N):
-            if (n+1) == N:
+            if (n + 1) == N:
                 tokendict[n].send = True
-            elif (tokendict[n].sidx < tokendict[n+1].sidx):
+            elif (tokendict[n].sidx < tokendict[n + 1].sidx):
                 tokendict[n].send = True
         return tokendict
 
@@ -54,15 +54,13 @@ class DocReader(object):
         """
         N = len(tokendict)
         for n in range(N):
-            if (n+1) == N:
+            if (n + 1) == N:
                 tokendict[n].boundary = True
-            elif (tokendict[n].eduidx < tokendict[n+1].eduidx):
+            elif (tokendict[n].eduidx < tokendict[n + 1].eduidx):
                 tokendict[n].boundary = True
             else:
                 tokendict[n].boundary = False
         return tokendict
-            
-        
 
     def _parseline(self, line, gidx):
         """ Parse one line
@@ -96,4 +94,3 @@ class DocReader(object):
             raise ValueError("Unrecognized format")
         tok.gidx = gidx
         return tok
-        

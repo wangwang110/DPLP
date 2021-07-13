@@ -6,6 +6,7 @@
 import numpy
 from scipy.sparse import lil_matrix, csr_matrix
 
+
 def isnumber(s):
     """ Is number or not
     """
@@ -18,13 +19,12 @@ def isnumber(s):
 
 def vectorize(feats, vocab):
     # print vocab
-    vec = lil_matrix((1,len(vocab)))
+    vec = lil_matrix((1, len(vocab)))
     for feat in feats:
         try:
             idx = vocab[feat]
-            vec[0,idx] += 1.0
+            vec[0, idx] += 1.0
         except KeyError:
             # print feat
             pass
     return vec
-

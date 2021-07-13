@@ -13,9 +13,11 @@ Read xml output from Stanford CoreNLP and extract
 9. Partial constituent parse
 '''
 
+
 class TokenElem(object):
     """ Data structure for each token
     """
+
     def __init__(self, idx, word, lemma, pos, nertype=None):
         self.word, self.pos = word, pos
         self.idx, self.lemma = idx, lemma
@@ -27,6 +29,7 @@ class TokenElem(object):
 class SentElem(object):
     """ Data structure for each sentence
     """
+
     def __init__(self, idx, tokenlist):
         self.tokenlist = tokenlist
         self.idx = idx
@@ -35,11 +38,12 @@ class SentElem(object):
 class DepElem(object):
     """ Data structure for reading dependency parsing
     """
+
     def __init__(self, deptype, gidx, gtoken, didx, dtoken):
         self.deptype = deptype
         self.gidx, self.gtoken = gidx, gtoken
         self.didx, self.dtoken = didx, dtoken
-        
+
 
 def getText(nodelist):
     rc = []
@@ -54,14 +58,14 @@ def getTokens(sent):
     tokenelem_dict = {}
     for token in tokens:
         pos = getText(token.getElementsByTagName('POS')[0].childNodes)
-        pos = pos.encode("ascii","ignore")
+        pos = pos.encode("ascii", "ignore")
         word = getText(token.getElementsByTagName('word')[0].childNodes)
-        word = word.encode("ascii","ignore")
+        word = word.encode("ascii", "ignore")
         lemma = getText(token.getElementsByTagName('lemma')[0].childNodes)
-        lemma = lemma.encode("ascii","ignore")
+        lemma = lemma.encode("ascii", "ignore")
         try:
             ner = getText(token.getElementsByTagName('NER')[0].childNodes)
-            ner = ner.encode("ascii","ignore")
+            ner = ner.encode("ascii", "ignore")
         except IndexError:
             ner = None
         idx = int(token.attributes['id'].value)
@@ -111,9 +115,9 @@ def integrate(token_dict, dep_list):
         token_dict[didx] = tokenelem
     token_list = []
     for idx in range(len(token_dict)):
-        token_list.append(token_dict[idx+1])
+        token_list.append(token_dict[idx + 1])
     return token_list
-    
+
 
 def reader(fname):
     xmldoc = minidom.parse(fname)
@@ -134,21 +138,26 @@ def combineparse2sent(sent, parse):
     """ Combine constitent parse into sent
     """
     parse = parse.split()
-    tokenlist = [token.word for token in sent.tokenlist]
-    parselist, tidx = [""]*len(tokenlist), 0
+    tokenlist = [token.word.decode() for token in sent.tokenlist]
+    parselist, tidx = [""] * len(tokenlist), 0
+
+    print(tokenlist)
+    print(parselist)
     while parse:
         item = parse.pop(0)
         parselist[tidx] += (" " + item)
-        partialparse = parselist[tidx].replace(' ','')
-        partialparse = partialparse.encode("ascii", "ignore")
-        word = tokenlist[tidx].replace(' ','')
-        # print word, partialparse
+        partialparse = parselist[tidx].replace(' ', '')
+        # partialparse = partialparse.decode()
+        # encode("ascii", "ignore").
+        # print(tokenlist[tidx])
+        word = tokenlist[tidx].replace(' ', '')
+        # print(word, partialparse)
         if (word + ')') in partialparse:
             tidx += 1
     # Attach to sent
     for (tidx, token) in enumerate(sent.tokenlist):
         item = parselist[tidx]
-        item = item.encode("ascii", "ignore")
+        # item = item.encode("ascii", "ignore")
         sent.tokenlist[tidx].partialparse = item
     return sent
 
@@ -162,13 +171,29 @@ def combine(sentlist, constlist):
         sentlist[sidx] = sent
     return sentlist
 
-        
+
 def writer(sentlist, fconll):
     with open(fconll, 'w') as fout:
         for sent in sentlist:
             for token in sent.tokenlist:
-                line = str(sent.idx) + '\t' + str(token.idx) + '\t' + token.word + '\t' + token.lemma + '\t' + str(token.pos) + '\t' + str(token.deptype) + '\t' + str(token.headidx) + '\t' + str(token.nertype) + '\t' + str(token.partialparse) + '\n'
-                line = line.encode('ascii', 'ignore')
+                print(sent.idx)
+                print(token.idx)
+                print(token.word)
+                print(token.lemma)
+                print(token.pos)
+
+                print(token.deptype)
+                print(token.headidx)
+                print(token.nertype)
+
+                print(token.partialparse)
+
+                line = str(sent.idx) + '\t' + str(
+                    token.idx) + '\t' + token.word.decode() + '\t' + token.lemma.decode() + '\t' \
+                       + str(token.pos.decode()) + '\t' + str(token.deptype) + '\t' + str(token.headidx) + '\t' \
+                       + str(token.nertype) + '\t' + str(token.partialparse) + '\n'
+                print(line)
+                # line = line.encode('ascii', 'ignore')
                 fout.write(line)
             fout.write('\n')
 
@@ -177,4 +202,3 @@ if __name__ == '__main__':
     sentlist, constlist = reader('test.xml')
     sentlist = combine(sentlist, constlist)
     writer(sentlist, 'test.conll')
-        

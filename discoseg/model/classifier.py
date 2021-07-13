@@ -9,8 +9,10 @@ A classification model for discourse segmentation
 
 from sklearn.svm import LinearSVC
 from sklearn.metrics import accuracy_score
-from cPickle import load, dump
+# from cPickle import load, dump
+import pickle
 import gzip
+
 
 class Classifier(object):
     def __init__(self, C=1.0, penalty='l2', loss='squared_hinge'):
@@ -30,11 +32,11 @@ class Classifier(object):
         self.clf.fit(data, labels)
         predlabels = self.clf.predict(data)
         acc = accuracy_score(labels, predlabels)
-        print 'Training Accuracy: {}'.format(acc)
+        print('Training Accuracy: {}'.format(acc))
         if devdata is not None:
             devpredlabels = self.clf.predict(devdata)
             devacc = accuracy_score(devlabels, devpredlabels)
-            print 'Dev Accuracy: {}'.format(devacc)
+            print('Dev Accuracy: {}'.format(devacc))
 
     def predict(self, data):
         """
@@ -45,15 +47,16 @@ class Classifier(object):
     def savemodel(self, fmodel):
         """
         """
-        print 'Save model into: {}'.format(fmodel)
+        print('Save model into: {}'.format(fmodel))
         if not fmodel.endswith('.pickle.gz'):
             fmodel += '.pickle.gz'
         with gzip.open(fmodel, 'w') as fout:
-            dump(self.clf, fout)
+            pickle.dump(self.clf, fout)
 
     def loadmodel(self, fmodel):
         """
         """
-        print "Load model from: {}".format(fmodel)
+        print("Load model from: {}".format(fmodel))
         with gzip.open(fmodel, 'r') as fin:
-            self.clf = load(fin)
+            print(fin)
+            self.clf = pickle.load(fin, encoding='latin1')

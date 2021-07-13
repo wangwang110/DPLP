@@ -1,0 +1,12 @@
+ ( NS-circumstance ( NS-elaboration ( EDU 1 )  ( EDU 2 )  )  ( NN-contrast ( NS-attribution ( SN-attribution ( EDU 3 )  ( EDU 4 )  )  ( EDU 5 )  )  ( NS-elaboration ( EDU 6 )  ( NS-elaboration ( EDU 7 )  ( NN-list ( NS-purpose ( EDU 8 )  ( NN-list ( EDU 9 )  ( NS-reason ( EDU 10 )  ( EDU 11 )  )  )  )  ( NN-list ( EDU 12 )  ( NS-antithesis ( EDU 13 )  ( EDU 14 )  )  )  )  )  )  )  ) 
+
+ ( NS-elaboration ( EDU 1 )  ( NS-elaboration ( NS-elaboration ( EDU 2 )  ( SN-attribution ( EDU 3 )  ( EDU 4 )  )  )  ( NS-elaboration ( NS-circumstance ( EDU 5 )  ( NS-temporal ( EDU 6 )  ( EDU 7 )  )  )  ( NS-elaboration ( EDU 8 )  ( NS-elaboration ( EDU 9 )  ( NN-list ( EDU 10 )  ( NS-circumstance ( NS-circumstance ( EDU 11 )  ( EDU 12 )  )  ( SN-attribution ( EDU 13 )  ( NS-reason ( NS-elaboration ( EDU 14 )  ( EDU 15 )  )  ( NS-elaboration ( NS-elaboration ( EDU 16 )  ( EDU 17 )  )  ( NS-elaboration ( EDU 18 )  ( EDU 19 )  )  )  )  )  )  )  )  )  )  )  ) 
+
+ ( NS-elaboration ( NS-elaboration ( SN-circumstance ( EDU 1 )  ( EDU 2 )  )  ( NS-elaboration ( EDU 3 )  ( NS-purpose ( EDU 4 )  ( NN-list ( EDU 5 )  ( EDU 6 )  )  )  )  )  ( NS-elaboration ( EDU 7 )  ( NN-list ( EDU 8 )  ( EDU 9 )  )  )  ) 
+
+ ( NS-elaboration ( NS-elaboration ( EDU 1 )  ( EDU 2 )  )  ( NS-elaboration ( SN-attribution ( EDU 3 )  ( EDU 4 )  )  ( NS-elaboration ( NS-elaboration ( EDU 5 )  ( EDU 6 )  )  ( NN-list ( NS-elaboration ( NN-list ( EDU 7 )  ( EDU 8 )  )  ( EDU 9 )  )  ( EDU 10 )  )  )  )  ) 
+
+ ( NS-elaboration ( SN-attribution ( EDU 1 )  ( EDU 2 )  )  ( NS-elaboration ( NS-elaboration ( NS-elaboration ( NS-elaboration ( NS-elaboration ( EDU 3 )  ( NS-purpose ( EDU 4 )  ( SN-attribution ( EDU 5 )  ( EDU 6 )  )  )  )  ( EDU 7 )  )  ( EDU 8 )  )  ( EDU 9 )  )  ( NS-example ( NS-elaboration ( EDU 10 )  ( EDU 11 )  )  ( NN-list ( EDU 12 )  ( EDU 13 )  )  )  )  ) 
+
+ ( NS-elaboration ( EDU 1 )  ( NN-contrast ( NN-list ( EDU 2 )  ( EDU 3 )  )  ( NS-elaboration ( EDU 4 )  ( NS-elaboration ( EDU 5 )  ( NS-elaboration ( NN-same_unit ( EDU 6 )  ( NS-elaboration ( EDU 7 )  ( EDU 8 )  )  )  ( NS-elaboration ( NN-same_unit ( EDU 9 )  ( EDU 10 )  )  ( NS-elaboration ( NS-elaboration ( EDU 11 )  ( EDU 12 )  )  ( NS-elaboration ( SN-attribution ( EDU 13 )  ( NS-elaboration ( EDU 14 )  ( EDU 15 )  )  )  ( NS-elaboration ( NN-contrast ( EDU 16 )  ( EDU 17 )  )  ( NS-elaboration ( NS-elaboration ( EDU 18 )  ( EDU 19 )  )  ( NS-means ( NS-elaboration ( EDU 20 )  ( EDU 21 )  )  ( EDU 22 )  )  )  )  )  )  )  )  )  )  )  ) 
+

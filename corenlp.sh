@@ -5,16 +5,18 @@
 #    ./corenlp.sh -file filename
 #    ./corenlp.sh -file filename -outputFormat text 
 
-scriptdir=`dirname $0`
+scriptdir=/data_local/DPLP-master/stanford-corenlp-4.2.2/
 
 # echo java -mx3g -cp \"$scriptdir/*\" edu.stanford.nlp.pipeline.StanfordCoreNLP $*
 
 # $1 - path
-
 PATH=$1
 for FNAME in $PATH/*
 do
-    /usr/bin/java -mx2g -cp "$scriptdir/*" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse -ssplit.eolonly -tokenize.whitespace true -file $FNAME
-    # /usr/bin/java -mx2g -cp "$scriptdir/*" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse -file $FNAME
+     echo $FNAME.xml
+     echo $(/usr/bin/basename $FNAME.xml)
+     echo $scriptdir
+    /home/Java/jdk1.8.0/bin/java  -mx2g -cp "$scriptdir/*" edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,lemma,ner,parse -ssplit.eolonly \
+    -tokenize.whitespace true -file $FNAME -outputFormat xml
     /bin/mv $(/usr/bin/basename $FNAME.xml) $PATH/
 done

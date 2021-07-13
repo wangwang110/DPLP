@@ -6,6 +6,7 @@
 from cPickle import dump
 import gzip
 
+
 def reader(fname):
     bcvocab = {}
     with open(fname, 'r') as fin:
@@ -18,7 +19,7 @@ def reader(fname):
 def savevocab(vocab, fname):
     with gzip.open(fname, 'w') as fout:
         dump(vocab, fout)
-    print 'Done'
+    print('Done')
 
 
 if __name__ == '__main__':

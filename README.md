@@ -1,3 +1,16 @@
+1.下载使用corenlp`https://blog.csdn.net/ltochange/article/details/118696192`
+2. 待分析的篇章放到data文件夹下面
+3. `./corenlp.sh ./data`
+4. `python convert.py ./data`
+5. `python segmenter.py ./data`
+6. `python segmenter.py ./data`
+7. `python ./rstparser.py ./data False`
+
+全部的结果已存入data目录
+如果想尝试自己跑一遍，需将data下面的非原始篇章的文件全部删掉
+
+-----------------------
+
 # RST Parser #
 
 ## 1. Required Package ##
